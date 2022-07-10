@@ -1,0 +1,84 @@
+/* CSS HEX
+--gainsboro: #dcdcddff;
+--silver: #c5c3c6ff;
+--davys-grey: #46494cff;
+--black-coral: #4c5c68ff;
+--blue-munsell: #1985a1ff;
+
+--cultured: #f0edeeff;  or   -- Dark Slate Grey: #3A4C45ff
+--jonquil: #eac40fff;
+--antique-bronze: #645b3bff;
+--gunmetal: #032933ff;
+--skobeloff: #01676eff; */
+
+
+* {
+        color: #645b3bff;
+        font-size: 16pt
+}
+body {background: #3A4C45ff}
+
+.container {
+        position: relative;
+        display: flex;
+        width: 50vw;
+        max-width: 420px;
+        height: 30vh;
+        margin: auto;
+        transform:translateY(35vh);
+        z-index: -3
+}
+
+.white-keys{
+        display: flex;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        line-height: 50vh;
+        z-index: -2
+}
+
+.white {
+        background: white;
+        border: solid 1px #4c5c68ff;
+        text-align: center;
+        flex-grow: 1;
+        font-weight: bold;
+        transition-duration: 200ms
+}
+
+.white:hover {background-color: #eac40fff;  transform:translateY(2%)}
+
+.black-keys {
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 57%;
+        line-height: 25vh;
+        text-align: center
+
+}
+.black {
+        background-color: black;
+        color: white;
+        height: 100%;
+        width: 6.5%;
+        display: inline-block;
+        border: outset #80808099 7px;
+        border-top: 0px;
+        z-index: 0;
+        position: absolute;
+        transition-duration: 200ms
+}
+/*Move the black keys to the correct location */
+.W {left: 9%}
+.E {left: 23.8%}
+.T {left: 52%}
+.Y {left: 66.3%}
+.U {left: 80.7%}
+
+.black:hover {background-color: #01676eff; transform: translateY(1.5%)}
+
+
+
+
